@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add House</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+ 
+
+     .abc
+     {
+            color:rgb(10, 128, 10);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: lightgrey;
+            padding:10px;
+            font-size: 50px;
+            height: 100px;
+     }
+     
+     .form-group{
+  width:80%;
+  float: left;
+  padding :30 px;
+  margin: 5px 200px 10px 35px;
+}
+
+.btn-primary {
+        font-size : 20px;
+        margin-left: 35px; 
+}
+
+.form-check-input{
+                margin-left: 80px; 
+}
+body{
+     background-image: url(Images/OwnerPage.png);
+}
+   
+</style>
+</head>
+<body>
+     <h1 class="abc"><b>Online Rental House Management</b></h1> 
+     
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-size: 22px;'">
+    <ul class="navbar-nav">
+  <li class="nav-item ">
+      <a class="nav-link" href="OwnerHomePage.html">HomePage |</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="AddProfile.html">AddProfile |</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="GetOwnerProfile.html">View Profile |</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="AddHouse.html">Add House |</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="GetHouse.html">View House |</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="HomePage.html">Log Out</a>
+    </li>
+  </ul>
+</nav>
+  
+<div class="container">
+<br><br><br>
+ 
+
+<table border="2px" style="margin-top: 20px;margin-left: 150px;background-color: white;">
+ <tr><td>
+   <h1 style= "margin-left:200px;"><b>ADD HOUSE</b></h1>
+   <br/><br/>
+       
+  <form method="post" action="AddHouse"  enctype="multipart/form-data"  style="width:800px" class="was-validated">
+    
+    <div class="form-group">
+      <label for="id1"><b>AADHAR ID:</b></label>
+      <input type="text" class="form-control"  id="id1" placeholder="Enter Aadhar Id" name="id">
+    </div>
+ 
+  <div class="form-group">
+      <label for="name1"><b>NAME:</b></label>
+      <input type="text" class="form-control"  id="name1" placeholder="Enter Name" name="name">
+    </div>
+    
+      <div class="form-group">
+        <label for="mob_no"><b>MOBILE NUMBER:</b></label>
+        <input type="text" class="form-control"  id="mob_no1" placeholder="Enter Mobile Number" name="mob_no">
+    </div>
+    
+     <div class="form-group">
+      <label for="cat"><b>CATEGORY :</b></label><br/>
+                 <input type="radio" class="form-check-input" name="cat">Individual<br/>
+                 <input type="radio" class="form-check-input" name="cat">Apartment<br/>    
+     </div>
+     
+       <div class="form-group">
+      <label for="loc"><b>LOCATION :</b></label>
+      <input type="text" class="form-control"  id="loc" placeholder="Enter Location" name="loc">
+    </div> <br/>
+           
+    
+    <div class="form-group">
+      <label for="bed"><b>BEDROOMS :</b></label>
+      <input type="number" class="form-control" id="bed" placeholder="Enter number of Bedrooms" name="bed">
+    </div>
+    
+   
+   
+    <div class="form-group">
+        <label><b>PICTURE:</b></label>
+         <input type="file"   name="image" />
+    </div> 
+ 
+   <div class="form-group">
+         <label for="imgName"><b>IMAGE NAME :</b></label>
+         <input type="text" class="form-control" id="imgName" placeholder="Enter Image Name (with extension)" name="imgName">
+   </div><br/>
+
+    <div class="form-group">
+        <label for="address"><b>ADDRESS:</b></label><br>
+        <textarea name="address" required rows="3" cols="60">Enter Address.... </textarea>
+    </div>
+    <br/><br/>
+    <button type="submit"  name="submit" class="btn-primary">Add</button>
+    
+    </form>
+    
+    </td></tr>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Customer Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+ 
+
+     .abc
+     {
+            color:rgb(10, 128, 10);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            background-color: lightgrey;
+            padding:10px;
+            font-size: 50px;
+            height: 100px;
+     }
+     
+     .form-group{
+  width:75%;
+  float: left;
+  padding :30 px;
+  margin: 5px 200px 10px 35px;
+}
+
+body{
+     background-image: url(Images/OwnerPage.png);
+}
+
+.btn-primary {
+        font-size : 20px;
+        margin-left: 35px; 
+}
+
+.form-check-input{
+                margin-left: 60px; 
+}
+   
+</style>
+</head>
+<body>
+     <h1 class="abc"><b>Online Rental House Management</b></h1> 
+     
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" style="font-size: 22px;'">
+    <ul class="navbar-nav">
+  <li class="nav-item ">
+      <a class="nav-link" href="CustomerHomePage.html">HomePage |</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="AddCustomerProfile.html">AddProfile |</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="GetCustomerProfile.html">View Profile |</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Search.html">Search |</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="HomePage.html">Log Out</a>
+    </li>
+  </ul>
+</nav>
+  
+<div class="container-fluid">
+<br><br><br>
+ 
+
+<table border="2" style= "margin-top: 20px;margin-left: 250px; margin-bottom:50px;background-color: ivory;">
+ <tr><td>
+   <h1 style= "margin-left:200px;"><b>ADD PROFILE</b></h1>
+   <br/><br/>
+       
+  <form method="post" action="AddCustomerProfile"  enctype="multipart/form-data"  style="width:800px" class="was-validated">
+  <div class="form-group">
+      <label for="id1"><b>ID:</b></label>
+      <input type="number" class="form-control"  id="id1" placeholder="Enter Id" name="id">
+    </div>
+    
+     <div class="form-group">
+      <label for="name1"><b>NAME:</b></label>
+      <input type="text" class="form-control"  id="name1" placeholder="Enter Name" name="name">
+    </div>
+    
+       <div class="form-group">
+      <label for="dob1"><b>DATE OF BIRTH:</b></label>
+      <input type="date" class="form-control"  id="dob1" placeholder="Enter Date of Birth" name="dob">
+    </div> <br/>
+    
+    <div class="form-group"> 
+    <label for="gen"><b>GENDER:</b></label><br/>
+                 <input type="radio" class="form-content-type" name="gender">Male<br/>
+                 <input type="radio" class="form-content-type" name="gender">Female<br/>
+     </div>         
+    
+    <div class="form-group">
+      <label for="email1"><b>EMAIL:</b></label>
+      <input type="email" class="form-control" id="email1" placeholder="Enter email" name="email">
+    </div>
+    
+     <div class="form-group">
+        <label for="mob_no"><b>MOBILE NUMBER:</b></label>
+        <input type="number" class="form-control"  id="mob_no1" placeholder="Enter Mobile Number" name="mob_no">
+    </div>
+   
+    <div class="form-group">
+        <label><b>PICTURE:</b></label>
+         <input type="file"   name="image" />
+    </div> 
+ 
+   <div class="form-group">
+         <label for="imgName"><b>IMAGE NAME :</b></label>
+         <input type="text" class="form-control" id="imgName" placeholder="Enter Image Name (with extension)" name="imgName">
+   </div><br/>
+
+    <div class="form-group">
+        <label for="address"><b>ADDRESS:</b></label><br>
+        <textarea name="address" required rows="3" cols="60">Enter Address.... </textarea>
+    </div>
+    <br/><br/>
+    <button type="submit"  name="submit" class="btn-primary">Submit</button>
+    
+    </form>
+    
+    </td></tr>
+</table>
+</div>
+</body>
+</html>

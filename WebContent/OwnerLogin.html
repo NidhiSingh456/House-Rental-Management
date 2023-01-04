@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Owner Login Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: url(Images/ownerLogin.jpg);}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;-
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn , .btn-primary{
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.div1, .div2{
+  float: left;
+  padding :30 px;
+  margin: 100px 50px 90px 40px;
+}
+</style>
+</head>
+<body>
+<table border="3" width="50%" height="60%" style="background-color:mistyrose;margin-top: 100px;margin-left: 300px;margin-bottom:100px">
+  <tr><td>
+<div class="div1">
+
+  <form action="OwnerLogin" style="max-width:500px;margin:auto">
+  <h2>Sign In</h2>
+  <hr/><br/>
+ 
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="uname">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="pwd">
+  </div>
+
+  <button type="submit" class="btn">Register</button>
+</form>
+</div>
+</td>
+
+
+<td>
+<div class="div2">
+  <h2>Don't Have any Account </h2>
+  <a href="AddOwner.html"  style="color:blue;font-size:40px;"> Sign Up </button>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
